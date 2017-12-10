@@ -12,6 +12,7 @@ else{
     die("connection failed. Reason:".mysqli_connect_error());
 }
 ?>
+'''
 
 '''html
 <link href="DisplayBox.css" rel="stylesheet" type="text/css"/>
@@ -44,13 +45,8 @@ else{
 
 <h1>NOTE: Set private chat ON to be contacted by other players.</h1>
 </fieldset>
-
-
-
-
-
-
 '''
+
 
 '''php
 <?php
@@ -66,7 +62,6 @@ $sql="insert into rstable (username, cmbt, activity) values('$username','$cmbt',
 '''
 
 '''html
-
 <br><br><br>
 <legend>Find Players</legend>
 
@@ -113,6 +108,5 @@ if(mysqli_num_rows($results) > 0)
 
 mysqli_close($connection);
 ?>
-
 '''
 
