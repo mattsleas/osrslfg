@@ -12,6 +12,8 @@ else{
     die("connection failed. Reason:".mysqli_connect_error());
 }
 ?>
+
+'''html
 <link href="DisplayBox.css" rel="stylesheet" type="text/css"/>
 
  <head>
@@ -48,7 +50,9 @@ else{
 
 
 
+'''
 
+'''php
 <?php
 $username=$_POST['username'];
 $cmbt=$_POST['cmbt'];
@@ -59,12 +63,17 @@ $sql="insert into rstable (username, cmbt, activity) values('$username','$cmbt',
     }  
     
 ?>
+'''
 
+'''html
 
 <br><br><br>
 <legend>Find Players</legend>
 
-<p>
+<p>    
+'''
+
+'''php
 <?php
 $atk="<img src='/PhpProject1/skill_icon_attack1.gif' alt ='atk' />";
 $str="<img src='/PhpProject1/skill_icon_strength1.gif' alt ='str' />";
